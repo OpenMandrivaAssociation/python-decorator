@@ -1,6 +1,6 @@
 %define module	decorator
 %define name	python-%{module}
-%define version	3.1.2
+%define version	3.2.0
 %define release %mkrel 1
 
 Summary:	Python decorator utilities
