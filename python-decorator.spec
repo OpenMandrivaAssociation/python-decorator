@@ -1,7 +1,7 @@
 %define module	decorator
 %define name	python-%{module}
 %define version	3.2.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	Python decorator utilities
 Name:		%{name}
@@ -13,7 +13,7 @@ Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-%py_requires -d
+BuildRequires:	python-devel
 
 %description
 The aim of the decorator module it to simplify the usage of decorators
@@ -35,4 +35,3 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
 %files -f FILE_LIST
 %defattr(-,root,root)
 %doc *.txt documentation.*
-
