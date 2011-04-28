@@ -1,13 +1,13 @@
 %define module	decorator
 %define name	python-%{module}
-%define version	3.3.0
+%define version	3.3.1
 %define release %mkrel 1
 
 Summary:	Python decorator utilities
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{module}-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
