@@ -1,6 +1,6 @@
 %define module	decorator
 %define name	python-%{module}
-%define version	3.3.2
+%define version	3.3.3
 %define release %mkrel 1
 
 Summary:	Python decorator utilities
@@ -27,11 +27,12 @@ decorator, just because you can.
 
 %install
 %__rm -rf %{buildroot}
-PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} 
 
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root)
 %doc *.txt documentation.*
+%py_sitedir/%{module}*
