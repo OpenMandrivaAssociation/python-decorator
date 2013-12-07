@@ -3,7 +3,7 @@
 Summary:	Python decorator utilities
 Name:		python-%{module}
 Version:	3.4.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
