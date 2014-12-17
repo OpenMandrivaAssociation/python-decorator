@@ -3,7 +3,7 @@
 Summary:	Python decorator utilities
 Name:		python-%{module}
 Version:	3.4.0
-Release:	9
+Release:	10
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
@@ -59,7 +59,10 @@ popd
 
 %files -n python2-decorator 
 %doc python2/documentation.* python2/*.txt
-%{python2_sitelib}/%{module}*
+%{python2_sitelib}/%{module}-%{version}-*.egg-info
+%{python2_sitelib}/%{module}.py*
 
 %files -n python-decorator
-%{python_sitelib}/%{module}*
+%{python_sitelib}/%{module}-%{version}-*.egg-info
+%{python_sitelib}/%{module}.py*
+%{python_sitelib}/__pycache__/*
