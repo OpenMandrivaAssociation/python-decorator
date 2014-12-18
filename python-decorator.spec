@@ -3,7 +3,7 @@
 Summary:	Python decorator utilities
 Name:		python-%{module}
 Version:	3.4.0
-Release:	10
+Release:	11
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
@@ -11,6 +11,8 @@ Source0:	http://pypi.python.org/packages/source/d/decorator/decorator-%{version}
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	python-setuptools
+BuildRequires:	python2-setuptools
 
 %description
 The aim of the decorator module it to simplify the usage of decorators
