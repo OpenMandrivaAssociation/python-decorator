@@ -65,4 +65,3 @@ popd
 %files -n python-decorator
 %{python_sitelib}/%{module}-%{version}-*.egg-info
 %{python_sitelib}/%{module}.py*
-%{python_sitelib}/__pycache__/*
