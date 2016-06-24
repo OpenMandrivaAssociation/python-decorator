@@ -2,12 +2,12 @@
 
 Summary:	Python decorator utilities
 Name:		python-%{module}
-Version:	3.4.0
-Release:	12
+Version:	4.0.10
+Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
-Source0:	http://pypi.python.org/packages/source/d/decorator/decorator-%{version}.tar.gz
+Source0:	https://github.com/micheles/decorator/archive/%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(python3)
