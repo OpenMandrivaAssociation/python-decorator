@@ -2,7 +2,7 @@
 
 Summary:	Python decorator utilities
 Name:		python-%{module}
-Version:	4.0.10
+Version:	4.0.11
 Release:	1
 License:	BSD
 Group:		Development/Python
