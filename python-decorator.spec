@@ -2,7 +2,7 @@
 
 Summary:	Python decorator utilities
 Name:		python-%{module}
-Version:	4.0.11
+Version:	4.2.1
 Release:	1
 License:	BSD
 Group:		Development/Python
@@ -60,7 +60,7 @@ pushd python
 popd
 
 %files -n python2-decorator 
-%doc python2/documentation.* python2/*.txt
+%doc python2/*.txt
 %{python2_sitelib}/%{module}-%{version}-*.egg-info
 %{python2_sitelib}/%{module}.py*
 
