@@ -2,7 +2,7 @@
 
 Summary:	Python decorator utilities
 Name:		python-%{module}
-Version:	4.2.1
+Version:	4.3.0
 Release:	1
 License:	BSD
 Group:		Development/Python
@@ -15,18 +15,6 @@ BuildRequires:	python-setuptools
 BuildRequires:	python2-setuptools
 
 %description
-The aim of the decorator module it to simplify the usage of decorators
-for the average programmer, and to popularize decorators by showing
-various non-trivial examples. Of course, as all techniques, decorators
-can be abused and you should not try to solve every problem with a
-decorator, just because you can.
-
-%package -n python-decorator
-Summary:	Python decorator utilities
-Group:		Development/Python
-Requires:	python3
- 
-%description -n python-decorator
 The aim of the decorator module it to simplify the usage of decorators
 for the average programmer, and to popularize decorators by showing
 various non-trivial examples. Of course, as all techniques, decorators
@@ -64,6 +52,7 @@ popd
 %{python2_sitelib}/%{module}-%{version}-*.egg-info
 %{python2_sitelib}/%{module}.py*
 
-%files -n python-decorator
+%files
 %{python_sitelib}/%{module}-%{version}-*.egg-info
 %{python_sitelib}/%{module}.py*
+%{python_sitelib}/__pycache__/
