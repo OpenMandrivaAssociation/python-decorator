@@ -10,6 +10,7 @@ Url:		http://pypi.python.org/pypi/decorator/
 Source0:	https://github.com/micheles/decorator/archive/%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python2-pkg-resources
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-setuptools
 BuildRequires:	python2-setuptools
