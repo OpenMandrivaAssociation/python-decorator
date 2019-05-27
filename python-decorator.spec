@@ -2,12 +2,12 @@
 
 Summary:	Python decorator utilities
 Name:		python-%{module}
-Version:	4.3.0
-Release:	2
+Version:	4.4.0
+Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/decorator/
-Source0:	https://github.com/micheles/decorator/archive/%{version}.tar.gz
+Source0:	https://github.com/micheles/decorator/archive/%{module}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python2-pkg-resources
@@ -40,13 +40,13 @@ mv %{module}-%{version} python2
 cp -r python2 python
 
 %install
-pushd python2
+cd python2
 %{__python2} setup.py install --root=%{buildroot}
-popd
+cd -
 
-pushd python
+cd python
 %{__python} setup.py install --root=%{buildroot}
-popd
+cd -
 
 %files -n python2-decorator 
 %doc python2/*.txt
