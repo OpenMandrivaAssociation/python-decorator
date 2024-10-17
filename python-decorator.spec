@@ -6,7 +6,7 @@ Version:	4.4.2
 Release:	3
 License:	BSD
 Group:		Development/Python
-Url:		http://pypi.python.org/pypi/decorator/
+Url:		https://pypi.python.org/pypi/decorator/
 Source0:	https://github.com/micheles/decorator/archive/%{module}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
