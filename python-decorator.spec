@@ -2,7 +2,7 @@
 
 Name:		python-decorator
 Summary:	Python decorator utilities
-Version:	5.2.1
+Version:	5.3.1
 Release:	1
 License:	BSD-2-Clause
 Group:		Development/Python
@@ -23,6 +23,5 @@ can be abused and you should not try to solve every problem with a
 decorator, just because you can.
 
 %files
-%{python_sitelib}/%{module}.py
-%{python_sitelib}/__pycache__/*
+%{python_sitelib}/%{module}
 %{python_sitelib}/%{module}-%{version}.dist-info
