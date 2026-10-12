@@ -3,7 +3,7 @@
 Name:		python-decorator
 Summary:	Python decorator utilities
 Version:	5.3.1
-Release:	1
+Release:	2
 License:	BSD-2-Clause
 Group:		Development/Python
 URL:		https://pypi.python.org/pypi/decorator/
